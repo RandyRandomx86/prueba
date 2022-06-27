@@ -1,0 +1,183 @@
+:root{
+    --primary-color: #315694;
+    --secondary-color: #8ba2c5;
+    --dark-color: #424242;
+    --secondary-dark-color: #545454;
+    --auxiliar-color: #cbba8b;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+a.btn-primary{
+    display: block;
+    padding: 0.5rem;
+    color: #fff;
+    background-color: var(--primary-color);
+}
+h4{
+    font-weight: 400;
+}
+
+h5,h6{
+   font-weight: 300;
+}
+
+nav{
+    width: 100%;
+    background-color: #fff;
+    padding: 10px 55px;
+    margin: 0;
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    
+    box-shadow: 2px 2px 10px rgba(100, 100, 100, 0.4);
+}
+
+nav .logo{
+    width: 258px;
+    float: left;
+}
+nav .logo img{
+    max-width: 100%;
+}
+
+nav ul{
+    list-style-type: none;
+    float: right;
+    height: 100%;
+}
+
+nav ul li{
+    float: left;
+}
+
+nav ul li a{
+    display: block;
+    color: #000;
+    text-align: center;
+    padding: 26px 16px;
+    text-decoration: none;
+    height: 100%;
+}
+
+nav ul li a:hover{
+    color: var(--auxiliar-color);
+}
+
+.segmento{
+    position: relative;
+    background-image: url('./assets/VITARA-QUIROFANOS-RENDER-SALA-DE-RECUPERACION-\ \(1\).jpg');
+    color: #fff;
+    text-align: center;
+    height: 25rem;
+    max-height: 25rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+    background-size: cover;
+}
+
+.desfase-bajo{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    transform: translateY(50%);
+    /* background-color: rgba(100, 100, 100, 0.6); */
+    width: 100%;
+    height: 10rem;
+    justify-content: center;
+    gap:10%;
+}
+
+.card-desfase{
+    display: flex;
+    width: 17rem;
+    /* background-color: #000; */
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
+    transition: 200ms;
+    box-shadow: 2px 2px 10px rgba(100, 100, 100, 0.4);
+    cursor: pointer;
+}
+
+.card-desfase:hover{
+    
+    filter: -webkit-transform:scale(1.2);transform:scale(1.2);;
+}
+
+.card-desfase#img1{
+    /* background-image:  url('./assets/cam03_piso4_bite_op2_ed-1.png'); */
+    background: url('./assets/cam03_piso4_bite_op2_ed-1.png');
+    /* background-color: rgba(100,100,100,1); */
+    background-size: cover;
+}
+.card-desfase#img2{
+    background-image: url('./assets/VITARA-QUIROFANOS-RENDER-SALA-DE-RECUPERACION-\ \(1\).jpg');
+    background-size: cover;
+}
+
+.btn-primary{
+    background-color: var(--primary-color);
+    padding: 0.5rem;
+}
+
+section{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 11rem 0;
+    height: 15rem;
+    background: var(--secondary-dark-color);
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+section > .container{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    height: 120%;
+    gap: 1rem;
+    border-radius: 1rem;
+    transform: translateY(-10%);
+}
+.container.texto{
+    background-color: #fff;
+    padding: 0.5rem 2rem;
+    box-shadow: 2px 2px 10px rgba(100, 100, 100, 0.4);
+}
+.container.video{
+    padding: 0;
+}
+.container p{
+    color:var(--secondary-dark-color);
+    font-size: small;
+}
+
+.container iframe{
+    border-radius: 1rem;
+}
+
+
+
+
+
+
+
